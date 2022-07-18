@@ -312,59 +312,56 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="modal-btn" type="button">
-            <svg class="btn-icon" width="18px" height="18px" aria-label="Выключить">
+          <button data-modal-close class="modal-btn" type="button" aria-label="Выключить">
+            <svg class="btn-icon" width="18px" height="18px">
             <use href="./images/icons.svg#icon-close-18"></use>
             </svg>
           </button>
-          <div class="modal-inner">
-            <h2 class="modal-title title">Оставьте свои данные, мы вам перезвоним</h2>
-            <form class="form" name="modal-form" autocomplete="on" novalidate>
-              <div class="form-field">
-                <label class="form-field-label" for="user-name">Имя</label>
-                <input class="form-field-input" id="user-name" type="text"
-                  name="user-name" placeholder=" ">
-                  <svg class="field-icon" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                  </svg>
-              </div>
-              <div class="form-field">
-                <label class="form-field-label" for="user-phone">Телефон</label>
-                <input class="form-field-input" id="user-phone" type="tel" name="user-phone" placeholder=" ">
+          <h2 class="modal-title title">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="form" name="modal-form" autocomplete="on" novalidate>
+            <div class="form-field">
+              <label class="form-field-label" for="user-name">Имя</label>
+              <input class="form-field-input" id="user-name" type="text"
+                name="user-name" placeholder=" ">
                 <svg class="field-icon" aria-hidden="true">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
+                  <use href="./images/icons.svg#icon-person-black"></use>
                 </svg>
-              </div>
-              <div class="form-field">
-                  <label class="form-field-label" for="user-email">Почта</label>
-                  <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder=" ">
-                  <svg class="field-icon" aria-hidden="true">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                  </svg>
-              </div>
-              <div class="form-field">
-                  <label class="form-field-label" for="user-comment">Комментарий</label>
-                  <textarea class="form-field-input form-field-textarea" 
-                  id="user-comment" 
-                  name="user-comment" 
-                  rows="4" 
-                  placeholder="Введите текст"></textarea>
-              </div>
-              <div class="form-field-check">
-                  <label class="checkbox-label">
-                    <input type="checkbox" class="checkbox" name="terms-condition">
-                    Соглашаюсь с рассылкой и принимаю
+            </div>
+            <div class="form-field">
+              <label class="form-field-label" for="user-phone">Телефон</label>
+              <input class="form-field-input" id="user-phone" type="tel" name="user-phone" placeholder=" ">
+              <svg class="field-icon" aria-hidden="true">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+            <div class="form-field">
+                <label class="form-field-label" for="user-email">Почта</label>
+                <input class="form-field-input" id="user-email" type="email" name="user-email" placeholder=" ">
+                <svg class="field-icon" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+            </div>
+            <div class="form-field form-message">
+                <label class="form-field-label" for="user-comment">Комментарий</label>
+                <textarea class="form-field-input form-field-textarea" 
+                id="user-comment" 
+                name="user-comment" 
+                rows="4" 
+                placeholder="Введите текст"></textarea>
+            </div>
+            <div class="form-field-check">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="checkbox" name="terms-condition">
+                  <span>Соглашаюсь с рассылкой и принимаю
                     <a href="#" class="modal-link">Условия договора</a>
-                    <svg class="field-icon-check" aria-hidden="true">
-                      <use href="./images/icons.svg#icon-vector"></use>
-                    </svg>
-                  </label>  
-              </div>
-              <div class="form-field">
-                <button class="form-field-btn" type="submit">Отправить</button>
-              </div>
-            </form>
-          </div>  
+                  </span>
+                  <svg class="field-icon-check" aria-hidden="true">
+                    <use href="./images/icons.svg#icon-vector"></use>
+                  </svg>
+                </label>  
+            </div>
+            <button class="form-field-btn" type="submit">Отправить</button>
+          </form>
         </div>
       </div>
     </main>
@@ -426,15 +423,12 @@
           </ul>
         </div>
         <div class="modal-footer">
-          <form class="form" name="modal-footer-form" autocomplete="on" validate>
-            <div class="form-field">
-              <h2 class="modal-footer-title title">Подпишитесь на рассылку</h2>
-              <input class="form-field-footer" id="user-email" type="email" name="user-email" 
-              placeholder="E-mail" autofocus>
-              <button class="form-footer-btn" type="submit">Подписаться<svg class="field-icon-footer">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg></button>
-            </div>
+          <h2 class="modal-footer-title title">Подпишитесь на рассылку</h2>
+          <form class="form" name="modal-footer-form" autocomplete="on">
+            <input class="form-field-footer" id="E-mail" type="email" name="E-mail" placeholder="E-mail">
+            <button class="form-footer-btn" type="submit">Подписаться<svg class="field-icon-footer">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg></button>
           </form>
         </div> 
       </div>
